@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="div-nav">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">To-Do List</a></li>
+            <li><a href="#">Timer</a></li>
+            <li><a href="#">Date Calculator</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <a class="cta" href="#"
+        ><button class="togithub">My Github Page</button></a
+      >
+    </header>
+    <main class="main-container">
+      <div class="empty1"></div>
+      <div class="todo-list">
+        <div class="todo-header">
+          <h2 class="list-title">Tasks</h2>
+          <p class="task-count">2 tasks remaining</p>
+        </div>
+        <div class="todo-body">
+          <div class="tasks-container">
+            <!-- <div class="task">
+              <input type="checkbox" id="task1" />
+              <label for="task1">
+                <span class="custom-checkbox"></span>task 1</label
+              >
+            </div> -->
+          </div>
+          <div class="new-task-creator">
+            <form action="">
+              <input
+                type="text"
+                class="new-input"
+                placeholder="I want to..."
+                aria-label="I want to..."
+              />
+              <button
+                class="btn create"
+                type="submit"
+                aria-label="create new task"
+              >
+                +
+              </button>
+            </form>
+          </div>
+          <div class="delete-stuff">
+            <button class="btn delete">Clear completed tasks</button>
+            <button class="btn edit">Edit task</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="todo-details">
+        <div class="todo-header">
+          <h2 class="list-title">Details</h2>
+        </div>
+        <div class="task-details">
+          <p id="details" contenteditable="true"></p>
+          <!-- <form action="">
+            <input
+              type="text"
+              class="edit-details"
+              aria-label="I want to..."
+            /> -->
+        </div>
+      </div>
+      <div class="empty2"></div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
